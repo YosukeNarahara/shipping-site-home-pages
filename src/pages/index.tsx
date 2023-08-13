@@ -140,7 +140,7 @@ const links = [
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
-          <div className="desktop">
+          {/* <div className="desktop">
       <div className="div">
         <div className="rectangle" />
         <div className="text-wrapper">会社概要</div>
@@ -257,7 +257,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className="text-wrapper-47">応募する</div>
         </div>
       </div>
-    </div>
+    </div> */}
 
     </main>
   )
