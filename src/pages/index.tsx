@@ -1,5 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import "../styles/style.css";
 
 const pageStyles = {
   color: "#232129",
@@ -139,51 +140,125 @@ const links = [
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ul style={doclistStyles}>
-        {docLinks.map(doc => (
-          <li key={doc.url} style={docLinkStyle}>
-            <a
-              style={linkStyle}
-              href={`${doc.url}?utm_source=starter&utm_medium=ts-docs&utm_campaign=minimal-starter-ts`}
-            >
-              {doc.text}
-            </a>
-          </li>
-        ))}
-      </ul>
-      <ul style={listStyles}>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter-ts`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+          <div className="desktop">
+      <div className="div">
+        <div className="rectangle" />
+        <div className="text-wrapper">会社概要</div>
+        <div className="overlap">
+          <div className="text-wrapper-2">三</div>
+        </div>
+        <div className="text-wrapper-3">有限会社</div>
+        <div className="text-wrapper-4">深津運送</div>
+        <div className="text-wrapper-5">採用情報</div>
+        <div className="text-wrapper-6">採用情報</div>
+        <div className="text-wrapper-7">会社概要</div>
+        <img className="line" alt="Line" src="line-1.svg" />
+        <img className="img" alt="Line" src="line-4.svg" />
+        <img className="line-2" alt="Line" src="line-2.svg" />
+        <img className="line-3" alt="Line" src="line-5.svg" />
+        <div className="overlap-group">
+          <div className="text-wrapper-8">業務内容</div>
+        </div>
+        <div className="text-wrapper-9">業務内容はこんな感じです。文章は考えてください。</div>
+        <div className="text-wrapper-10">↓は他社サイトからパクりましたのでちゃんと考えましょう</div>
+        <div className="text-wrapper-11">
+          ・大型・中型車での幹線輸送
+          <br />
+          ・地域は姫路～各地方輸送又は近郊配送
+          <br />
+          ・一般貨物・パレット物・ケース物・その他郵便物)
+        </div>
+        <div className="XX">
+          ・中型免許を保持しており、中型車の運転経験があること(XX年程度)
+          <br />
+          ・トラックが好きで仕事への情熱がある方
+        </div>
+        <div className="text-wrapper-12">・こんなことした経験とかを書くこと</div>
+        <div className="text-wrapper-13">
+          ・仕事が好きな方
+          <br />
+          ・トラックが好きな方
+          <br />
+          ・チームワークや会社全体のことを考えられる方
+          <br />
+          ・などなど考えましょう
+        </div>
+        <div className="text-wrapper-14">◆必須スキル/経験</div>
+        <div className="text-wrapper-15">
+          ・役割は多分こんな感じです
+          <br />
+          ・いろんな仕事がありますのでトラックで全国を走り回ってください
+        </div>
+        <div className="text-wrapper-16">◆歓迎スキル/経験</div>
+        <div className="text-wrapper-17">◆求める人物像</div>
+        <div className="text-wrapper-18">◆求める役割</div>
+        <div className="text-wrapper-19">
+          ・やりがいは多分こんな感じです
+          <br />
+          ・トラックで全国を走り回ることができます。
+          <br />
+          ・色々な地域に行くことができ、現地の人や同業者などと交流を深めることで
+          <br />
+          　多様な文化に生で触れることができます。
+        </div>
+        <div className="text-wrapper-20">◆仕事のやりがい</div>
+        <div className="div-wrapper">
+          <div className="text-wrapper-8">応募資格</div>
+        </div>
+        <div className="overlap-group-2">
+          <div className="rectangle-2" />
+          <div className="rectangle-3" />
+          <div className="rectangle-4" />
+          <div className="rectangle-5" />
+          <div className="rectangle-6" />
+          <div className="rectangle-7" />
+          <div className="rectangle-8" />
+          <div className="text-wrapper-21">職種/募集ポジション</div>
+          <div className="rectangle-9" />
+          <div className="rectangle-10" />
+          <div className="rectangle-11" />
+          <div className="text-wrapper-22">雇用形態</div>
+          <div className="text-wrapper-23">中型車ドライバー</div>
+          <div className="text-wrapper-24">給与</div>
+          <div className="text-wrapper-25">勤務地</div>
+          <div className="text-wrapper-26">勤務時間</div>
+          <div className="text-wrapper-27">正社員</div>
+          <div className="text-wrapper-28">月給XX万円〜XX万円</div>
+          <div className="XXX-XXXX-XX-XXX">XXX-XXXX&nbsp;&nbsp;兵庫県姫路市四郷町坂元XXーXXX</div>
+          <div className="text-wrapper-29">勤務時間を記載</div>
+          <div className="text-wrapper-30">※能力・経験・前給を考慮の上、面談により決定</div>
+          <div className="text-wrapper-31">※上記金額にはXX時間分のみなし残業代を含む</div>
+          <img className="line-4" alt="Line" src="line-3.svg" />
+        </div>
+        <div className="overlap-2">
+          <div className="text-wrapper-32">会社名</div>
+          <div className="text-wrapper-33">設立</div>
+          <div className="text-wrapper-34">資本金</div>
+          <div className="text-wrapper-35">所在地</div>
+          <div className="text-wrapper-36">主な事業内容</div>
+          <div className="text-wrapper-37">連絡先</div>
+          <div className="text-wrapper-38">代表者</div>
+          <div className="text-wrapper-39">有限会社 深津運送</div>
+          <div className="text-wrapper-40">19XX XX XX</div>
+          <div className="text-wrapper-41">XXXX万円</div>
+          <div className="text-wrapper-42">〒XXXーXXXX</div>
+          <div className="text-wrapper-43">一般貨物輸送業務？。考えてください。</div>
+          <div className="text-wrapper-44">XXXXX@gmail.com</div>
+          <div className="text-wrapper-45">代表取締役社長　楢原義則</div>
+          <div className="text-wrapper-46">兵庫県姫路市四郷町坂元X-XX</div>
+          <img className="line-5" alt="Line" src="line-6.svg" />
+          <img className="line-6" alt="Line" src="line-7.svg" />
+          <img className="line-7" alt="Line" src="line-8.svg" />
+          <img className="line-8" alt="Line" src="line-9.svg" />
+          <img className="line-9" alt="Line" src="line-11.svg" />
+          <img className="line-10" alt="Line" src="line-10.svg" />
+        </div>
+        <div className="overlap-3">
+          <div className="text-wrapper-47">応募する</div>
+        </div>
+      </div>
+    </div>
+
     </main>
   )
 }
